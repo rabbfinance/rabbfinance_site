@@ -1,0 +1,54 @@
+$white:         #ffffff
+$dataGreen:     rgba(63,94,251,1)
+$lightGray:     #e4e7f2
+$mediumGray:    #c9d0e6
+$blueTexts:     #1d1d34
+
+.Button
+  align-items: center
+  border-radius: 48px
+  border: none
+  box-shadow: none
+  cursor: pointer
+  display: flex
+  display: inline-block
+  font-size: 16px
+  font-weight: 500
+  justify-content: center
+  margin: 8px 0px
+  transition: all 300ms ease-in-out
+  &:hover
+  &:focus
+    outline: none
+.Big
+  border-radius: 48px
+  height: 48px
+  padding: 0px 32px
+.Medium
+  border-radius: 48px
+  height: 40px
+  padding: 0px 24px
+.Small
+  border-radius: 32px
+  height: 32px
+  font-size: 14px
+  padding: 0px 16px
+
+.Primary
+  background-color: $white
+  border: 1px solid $lightGray
+  color: $blueTexts
+  &:hover
+    background-color : $dataGreen
+    border: 1px solid $dataGreen
+    color: $white
+  &.disabled
+    color: $mediumGray
+    cursor: not-allowed
+    background-color : $white
+    border: 1px solid $mediumGray
+    &:hover
+      color: $mediumGray
+      cursor: not-allowed
+      background-color : $white
+      border: 1px solid $mediumGray

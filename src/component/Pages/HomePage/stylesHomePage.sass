@@ -1,0 +1,43 @@
+$hue: 5;
+$shift: 30;
+$color: hsl($hue,90%,55%);
+$lightest: lighten(adjust-hue($color,$shift*3), 44%);
+$dark: darken(adjust-hue($color,-$shift), 10%);
+$light: desaturate(lighten(adjust-hue($color,$shift), 20%), 40%);
+$darker: desaturate(darken(adjust-hue($color,-$shift*2), 15%), 50%);
+
+$blue: rgb(63,94,251);
+$red: rgba(252,70,107,1);
+
+.Home
+  background: $blue
+  background: radial-gradient(circle, $blue 0%, $red 100%)
+  height: 100vh
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  &--warp
+    h1
+      font-size: 3em
+      font-weight: 400
+      color: rgba(255, 255, 255, 0.58)
+      text-align: center
+  &--header
+    background: #fff
+    padding: 0px 10px
+    input
+      padding: 16px 16px 16px 16px
+      border: none
+      background: rgba(0, 0, 0, 0.003)
+      box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03)
+      outline: none
+  &--list
+    padding: 0
+    margin: 0
+    border-top: 1px solid #ccc
+  &--item
+    background: #fff
+    list-style: none
+    padding: 10px 20px
+    border-top: 1px solid #ccc
