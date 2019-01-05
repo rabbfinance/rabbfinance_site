@@ -1,5 +1,5 @@
 {
-  "name": "react-todo-app",
+  "name": "Rabbfinance",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -34,5 +34,10 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "app de finanzas personales",
+  "main": "index.js",
+  "repository": "git@github.com:rabbfinance/rabbfinance_site.git",
+  "author": "jose Guzman <pygabo@gmail.com>",
+  "license": "MIT"
 }
