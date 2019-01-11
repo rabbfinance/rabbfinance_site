@@ -20,7 +20,7 @@ export const logout = () => ({
 });
 
 export function fetchLogin(user, password) {
-  let url = `http://0.0.0.0:8000/rest-auth/login/`;
+  let url = `https://api.pygabo.com/rest-auth/login/`;
   var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}/gim;
 
   const body = {

@@ -8,7 +8,7 @@ const saveList = newList => ({
 });
 
 function fetchGetList() {
-  let url = `http://localhost:8000/api/app/viewsets/to-do/`;
+  let url = `https://api.pygabo.com/api/app/viewsets/to-do/`;
   return function(dispatch) {
     axios({
       method: "GET",
@@ -28,7 +28,7 @@ function fetchGetList() {
 }
 
 function fetchCreateTodo(description) {
-  let url = `http://localhost:8000/api/app/viewsets/to-do/`;
+  let url = `https://api.pygabo.com/api/app/viewsets/to-do/`;
   return function(dispatch, getState) {
     const todo = [...getState().todo.list];
     axios({
