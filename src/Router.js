@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import PrivateRoute from "./containers/PrivateRoute";
 import LoginPage from "./containers/LoginContainer";
 import HomePage from "./containers/HomeContainer";
+import SignupPage from "./containers/SignupContainer";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -24,6 +25,7 @@ export default function RouterApp() {
     <Switch>
       <PrivateRoute exact path="/" component={HomePage} />
       <Route path="/login" component={LoginPage} />
+      <Route path="/signup" component={SignupPage} />
       <Route component={NoMatch} />
     </Switch>
   );
